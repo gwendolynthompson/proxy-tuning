@@ -12,10 +12,20 @@
 <img width="667" alt="Screenshot 2024-10-22 at 1 26 42 PM" src="https://github.com/user-attachments/assets/e04c5877-9a36-48c1-9842-d68c7485bd6f">
 
 ## Methodology
-Give psuedocode
+1. M: pretrained large model 
+2. M-: pretrained, smaller untuned model (with the same vocabulary as M)
+3. M+: M- after tuning, directly fine tuned on the target task or domain
+<img width="552" alt="Screenshot 2024-10-22 at 2 08 27 PM" src="https://github.com/user-attachments/assets/4924c7a0-f66c-47c4-8646-564c39868bc7">
+- Adds the difference of the logit of M+ and M- to the logit of M which allows only newly learned information to go into M as opposed to general model knowledge.
+- Takes the softmax to convert to logit into a probability distribution which is the output. 
 
 
 ## Experiments
+
+## Impacts
+- Addresses one of the major challenges in LLMs: **efficent fine-tuning** which enables people to adapt large, pretrained models to new tasks without as many resources.
+- Builds on research in transfer learning and fine-tuning. It extends the previous ideas without needing access to the model's parameters.
+- Provides new methods for handling proprietary models. 
 
 ## Key Contributions
 
@@ -25,8 +35,23 @@ Give psuedocode
 
 ## Critical Analysis
 - There is a tradeoff between different metrics. Users must pick a balance between two desired attributes like truthfulness and informativeness.
+<img width="285" alt="Screenshot 2024-10-22 at 2 19 19 PM" src="https://github.com/user-attachments/assets/37a0e273-0d7a-4d1a-9d5d-e30d4f907b03">
+
+
 - Large dependence on proxy model quality, it must be well-trained and fine-tuned to ensure high quality results
-- Specific to language models where access to logits is possible, may not be as transferable to models like image generation. 
+- Specific to language models where access to logits is possible, may not be as transferable to models like image generation.
+
+## Resource Links 
+- "The Power of Proxy Data and Proxy Networks for Hyper-Parameter Optimization" https://arxiv.org/abs/2107.05471
+- "Improve LLMs With Proxy Tuning" https://lightning.ai/lightning-ai/studios/improve-llms-with-proxy-tuning
+- "LoFT: Local Proxy Fine-tuning Improves Transferability to Large Language Model Attacks" https://openreview.net/forum?id=3ucOvX8WVu
+- "CPT: COnsistent Proxy Tuning for Black-box Optimization" https://www.researchgate.net/publication/381885086_CPT_Consistent_Proxy_Tuning_for_Black-box_Optimization 
+
+
+
+
+
+
 
 
 
