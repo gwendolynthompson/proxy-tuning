@@ -25,7 +25,8 @@ LoRA and other direct-tuning may yield better performance
 1. M: pretrained large model 
 2. M-: pretrained, smaller untuned model (with the same vocabulary as M)
 3. M+: M- after tuning, directly fine tuned on the target task or domain
-<img width="552" alt="Screenshot 2024-10-22 at 2 08 27 PM" src="https://github.com/user-attachments/assets/4924c7a0-f66c-47c4-8646-564c39868bc7">
+
+<img width="634" alt="Screenshot 2024-10-23 at 2 26 24 PM" src="https://github.com/user-attachments/assets/8ec6370f-91fe-4907-8bb9-0f0bb76ad849">
 
 - Adds the difference of the logit of M+ and M- to the logit of M which allows only newly learned information to go into M as opposed to general model knowledge.
 - Takes the softmax to convert to logit into a probability distribution which is the output.
@@ -39,6 +40,8 @@ LoRA and other direct-tuning may yield better performance
 
 **Informativeness:** Refers to the level of detail/richness of the content. More context/background but may not all be needed to answer the question.
 
+## Pseudocode
+<img width="559" alt="Screenshot 2024-10-23 at 2 28 04 PM" src="https://github.com/user-attachments/assets/718b09ad-f908-45bf-ae7e-882068c6f2cb">
 
 
 ## Experiments & Results
@@ -87,11 +90,13 @@ LoRA and other direct-tuning may yield better performance
 - It improves accessibility of of LLMs because less computational resources are needed in order to fine-tune models.
 
 
-## Resource Links 
+## Resource Links
+- Original GitHub link: https://github.com/alisawuffles/proxy-tuning
 - "The Power of Proxy Data and Proxy Networks for Hyper-Parameter Optimization" https://arxiv.org/abs/2107.05471
 - "Improve LLMs With Proxy Tuning" https://lightning.ai/lightning-ai/studios/improve-llms-with-proxy-tuning
 - "LoFT: Local Proxy Fine-tuning Improves Transferability to Large Language Model Attacks" https://openreview.net/forum?id=3ucOvX8WVu
-- "CPT: COnsistent Proxy Tuning for Black-box Optimization" https://www.researchgate.net/publication/381885086_CPT_Consistent_Proxy_Tuning_for_Black-box_Optimization
+- "CPT: Consistent Proxy Tuning for Black-box Optimization" https://www.researchgate.net/publication/381885086_CPT_Consistent_Proxy_Tuning_for_Black-box_Optimization
+- Conversation on Reddit about the paper: https://www.reddit.com/r/LocalLLaMA/comments/19dg8pk/new_paper_proxytuning_an_efficient_alternative_to/
 
 
 
