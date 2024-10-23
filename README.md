@@ -56,14 +56,14 @@
 
 ## Impacts
 - Addresses one of the major challenges in LLMs: **efficent fine-tuning** which enables people to adapt large, pretrained models to new tasks without as many resources.
-- Builds on research in transfer learning and fine-tuning. It extends the previous ideas without needing access to the model's parameters.
-- Provides new methods for handling proprietary models.
+- Builds on research in **transfer learning and fine-tuning**. It extends the previous ideas without needing access to the model's parameters.
+- Provides new methods for handling **proprietary models**.
 
 ## Critical Analysis
 - There is a tradeoff between different metrics. Users must pick a balance between two desired attributes like truthfulness and informativeness.
 
-
 - Large dependence on proxy model quality, it must be well-trained and fine-tuned to ensure high quality results
+
 - Specific to language models where access to logits is possible, may not be as transferable to models like image generation.
 
 
