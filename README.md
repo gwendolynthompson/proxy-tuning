@@ -26,13 +26,7 @@
 ## Impacts
 - Addresses one of the major challenges in LLMs: **efficent fine-tuning** which enables people to adapt large, pretrained models to new tasks without as many resources.
 - Builds on research in transfer learning and fine-tuning. It extends the previous ideas without needing access to the model's parameters.
-- Provides new methods for handling proprietary models. 
-
-## Key Contributions
-
-## Conclusions
-- Efficient tuning for large models by modifying their output logits at runtime
-- It improves accessibility of of LLMs because less computational resources are needed in order to fine-tune models.
+- Provides new methods for handling proprietary models.
 
 ## Critical Analysis
 - There is a tradeoff between different metrics. Users must pick a balance between two desired attributes like truthfulness and informativeness.
@@ -41,6 +35,12 @@
 
 - Large dependence on proxy model quality, it must be well-trained and fine-tuned to ensure high quality results
 - Specific to language models where access to logits is possible, may not be as transferable to models like image generation.
+
+
+## Conclusions
+- Efficient tuning for large models by modifying their output logits at runtime
+- It improves accessibility of of LLMs because less computational resources are needed in order to fine-tune models.
+
 
 ## Resource Links 
 - "The Power of Proxy Data and Proxy Networks for Hyper-Parameter Optimization" https://arxiv.org/abs/2107.05471
@@ -52,17 +52,6 @@
 
 
 
-
-
-
-
-
-
-This repository contains code for the paper [Tuning Language Models by Proxy (2024)](https://arxiv.org/abs/2401.08565). If you have any questions, please feel free to create a Github issue or reach out to the first author at alisaliu@cs.washington.edu.
-
-## Evaluation
-
-You can download the evaluation data at [zip file of our evaluation data](https://github.com/alisawuffles/proxy-tuning/blob/main/data.zip). Our evaluation setup is largely borrowed from [Tülu 2](https://arxiv.org/abs/2311.10702) (codebase at https://github.com/allenai/open-instruct), with slight modifications. To see examples of how evaluation scripts are run, see `scripts/eval`.
 
 
 ## Citation
