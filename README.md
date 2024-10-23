@@ -38,7 +38,9 @@
 
 ### Task specific tuning 
 - TriviaQA (question answering): on 13B there was 19.1% improvement. on 70B there was a 17.5% improvement
-- GSM (math word problems): on 13B there was a 37.3% improvement. on 70B there was a 44.3% improvement
+- GSM (math word problems):
+-   on 13B there was a 37.3% improvement.
+-   on 70B there was a 44.3% improvement
 
 ### Code adpatation
 - codexEval (generating python functions): on 13B, 32% improvement. on 70B there was a 8.6% improvement
