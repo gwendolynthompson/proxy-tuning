@@ -18,7 +18,13 @@
 <img width="552" alt="Screenshot 2024-10-22 at 2 08 27 PM" src="https://github.com/user-attachments/assets/4924c7a0-f66c-47c4-8646-564c39868bc7">
 
 - Adds the difference of the logit of M+ and M- to the logit of M which allows only newly learned information to go into M as opposed to general model knowledge.
-- Takes the softmax to convert to logit into a probability distribution which is the output. 
+- Takes the softmax to convert to logit into a probability distribution which is the output.
+
+### Balancing truthfulness and informativeness
+<img width="656" alt="Screenshot 2024-10-23 at 11 49 59 AM" src="https://github.com/user-attachments/assets/c44a6c24-71d0-4e26-bd7d-9ec65b6d7e53">
+
+<img width="285" alt="Screenshot 2024-10-22 at 2 19 19 PM" src="https://github.com/user-attachments/assets/37a0e273-0d7a-4d1a-9d5d-e30d4f907b03">
+
 
 
 ## Experiments
@@ -30,7 +36,6 @@
 
 ## Critical Analysis
 - There is a tradeoff between different metrics. Users must pick a balance between two desired attributes like truthfulness and informativeness.
-<img width="285" alt="Screenshot 2024-10-22 at 2 19 19 PM" src="https://github.com/user-attachments/assets/37a0e273-0d7a-4d1a-9d5d-e30d4f907b03">
 
 
 - Large dependence on proxy model quality, it must be well-trained and fine-tuned to ensure high quality results
