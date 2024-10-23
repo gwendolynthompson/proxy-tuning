@@ -16,6 +16,7 @@
 2. M-: pretrained, smaller untuned model (with the same vocabulary as M)
 3. M+: M- after tuning, directly fine tuned on the target task or domain
 <img width="552" alt="Screenshot 2024-10-22 at 2 08 27 PM" src="https://github.com/user-attachments/assets/4924c7a0-f66c-47c4-8646-564c39868bc7">
+
 - Adds the difference of the logit of M+ and M- to the logit of M which allows only newly learned information to go into M as opposed to general model knowledge.
 - Takes the softmax to convert to logit into a probability distribution which is the output. 
 
