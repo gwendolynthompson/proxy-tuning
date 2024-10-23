@@ -37,14 +37,20 @@
 - TruthfulQA (evaluates knowledge and reasoning): proxy model was 3.2 to 6.5% more truthful.
 
 ### Task specific tuning 
-- TriviaQA (question answering): on 13B there was 19.1% improvement. on 70B there was a 17.5% improvement
+- TriviaQA (question answering):
+  - 13B there was 19.1% improvement
+  - 70B there was a 17.5% improvement
 - GSM (math word problems):
-  - on 13B there was a 37.3% improvement.
-  - on 70B there was a 44.3% improvement
+  - 13B there was a 37.3% improvement
+  - 70B there was a 44.3% improvement
 
 ### Code adpatation
-- codexEval (generating python functions): on 13B, 32% improvement. on 70B there was a 8.6% improvement
-- DS-100 (python programming problems): on 13B there was a 16.6% improvement. on 70B there was a 6.7% improvement
+- codexEval (generating python functions):
+  - 13B, 32% improvement
+  - 70B there was a 8.6% improvement
+- DS-100 (python programming problems):
+  - 13B there was a 16.6% improvement
+  - 70B there was a 6.7% improvement
 
 
 
