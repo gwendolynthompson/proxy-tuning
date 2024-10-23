@@ -25,9 +25,26 @@
 
 <img width="285" alt="Screenshot 2024-10-22 at 2 19 19 PM" src="https://github.com/user-attachments/assets/37a0e273-0d7a-4d1a-9d5d-e30d4f907b03">
 
+**Truthfulness:** Whether or not the content is factually accurate. No misleading or false statements.
+**Informativeness:** Refers to the level of detail/richness of the content. More context/background but may not all be needed to answer the question.
 
 
-## Experiments
+
+## Experiments & Results
+### Instruction Tuning 
+- Alpacafarm (open-ended instructions) and GSM (arithmetic word problems): closed 88% of the gap between base and fully versions 
+- ToxiGen (evaluates toxicity of model generations): untuned produced toxic content 67-70% of the time, proxy tuning brought it to 0%
+- TruthfulQA (evaluates knowledge and reasoning): proxy model was 3.2 to 6.5% more truthful.
+
+### Task specific tuning 
+- TriviaQA (question answering): on 13B there was 19.1% improvement. on 70B there was a 17.5% improvement
+- GSM (math word problems): on 13B there was a 37.3% improvement. on 70B there was a 44.3% improvement
+
+### Code adpatation
+- codexEval (generating python functions): on 13B, 32% improvement. on 70B there was a 8.6% improvement
+- DS-100 (python programming problems): on 13B there was a 16.6% improvement. on 70B there was a 6.7% improvement
+
+
 
 ## Impacts
 - Addresses one of the major challenges in LLMs: **efficent fine-tuning** which enables people to adapt large, pretrained models to new tasks without as many resources.
