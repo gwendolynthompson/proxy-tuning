@@ -1,7 +1,11 @@
 # Tuning Language Models by Proxy
 
 
-**Question**: Why can't we use techniques like LoRA on models like GPT 3.5? LoRA requires direct access to the model's parameters and models like GPT 3.5 are proproetary.
+**Question**: Why can't we use techniques like LoRA on models like GPT 3.5? 
+<details>
+  <summary>Answer</summary>
+  LoRA requires direct access to the model's parameters and models like GPT 3.5 are proproetary.
+</details>
 
 ## Challenge
 - Large pretrained models become very resource intensive to fine-tune on specific domains.
@@ -30,9 +34,10 @@
 **Question:** What might happen if we fully rely on the proxy model’s new task-specific knowledge without controlling its impact on the main model’s original predictions? 
 
 **Hint:** Think about why it might be risky to let new information completely overwrite existing knowledge in a system.
-<>
-  (The model can become overly biased to the task-specific information and could loose important general information)
-</>
+<details>
+  <summary>Answer</summary>
+  The model can become overly biased to the task-specific information and could loose important general information. 
+</details>
 
 ### Adding a control term
 <img width="656" alt="Screenshot 2024-10-23 at 11 49 59 AM" src="https://github.com/user-attachments/assets/c44a6c24-71d0-4e26-bd7d-9ec65b6d7e53">
