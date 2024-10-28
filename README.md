@@ -28,7 +28,7 @@
 - Adds the difference of the logit of M+ and M- to the logit of M which allows only newly learned information to go into M as opposed to general model knowledge.
 - Takes the softmax to convert to logit into a probability distribution which is the output.
 
-### Balancing truthfulness and informativeness
+### Adding a control term
 <img width="656" alt="Screenshot 2024-10-23 at 11 49 59 AM" src="https://github.com/user-attachments/assets/c44a6c24-71d0-4e26-bd7d-9ec65b6d7e53">
 
 
@@ -38,7 +38,7 @@
 
 **Informativeness:** Refers to the level of detail/richness of the content. More context/background but may not all be needed to answer the question.
 
-#### How does it measure up to other models?
+### How does it measure up to other models?
 LoRA and other direct-tuning may yield better performance 
 
 <img width="205" alt="Screenshot 2024-10-23 at 1 27 31 PM" src="https://github.com/user-attachments/assets/ac7b0cfd-c45d-41cb-9237-59a038c93cbf">
