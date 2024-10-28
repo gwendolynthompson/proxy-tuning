@@ -17,6 +17,7 @@
 
 #### How does it measure up to other models?
 LoRA and other direct-tuning may yield better performance 
+
 <img width="205" alt="Screenshot 2024-10-23 at 1 27 31 PM" src="https://github.com/user-attachments/assets/ac7b0cfd-c45d-41cb-9237-59a038c93cbf">
 
 **But** it is significantly more efficent because there is no need for full model tuning and no parameter updates.
@@ -33,6 +34,7 @@ LoRA and other direct-tuning may yield better performance
 
 ### Balancing truthfulness and informativeness
 <img width="656" alt="Screenshot 2024-10-23 at 11 49 59 AM" src="https://github.com/user-attachments/assets/c44a6c24-71d0-4e26-bd7d-9ec65b6d7e53">
+
 
 <img width="285" alt="Screenshot 2024-10-22 at 2 19 19 PM" src="https://github.com/user-attachments/assets/37a0e273-0d7a-4d1a-9d5d-e30d4f907b03">
 
