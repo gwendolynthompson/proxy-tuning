@@ -4,7 +4,7 @@
 **Question**: Why can't we use techniques like LoRA on models like GPT 3.5? 
 <details>
   <summary>Answer</summary>
-  LoRA requires direct access to the model's parameters and models like GPT 3.5 are proproetary.
+  LoRA requires direct access to the model's parameters and models like GPT 3.5 are proprietary
 </details>
 
 ## Challenge
