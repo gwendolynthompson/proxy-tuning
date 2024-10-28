@@ -21,7 +21,8 @@
 
 <img width="634" alt="Screenshot 2024-10-23 at 2 26 24 PM" src="https://github.com/user-attachments/assets/8ec6370f-91fe-4907-8bb9-0f0bb76ad849">
 
-<img width="490" alt="Screenshot 2024-10-28 at 12 23 51 PM" src="https://github.com/user-attachments/assets/fa12999e-7fe0-42bf-9cd4-9fc5ec2dce62">
+<img width="835" alt="Screenshot 2024-10-28 at 12 24 50 PM" src="https://github.com/user-attachments/assets/dc0b7cf9-94cb-429b-bad4-4d60cb567813">
+
 
 
 - Adds the difference of the logit of M+ and M- to the logit of M which allows only newly learned information to go into M as opposed to general model knowledge.
