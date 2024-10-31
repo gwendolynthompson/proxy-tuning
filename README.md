@@ -56,7 +56,7 @@ LoRA and other direct-tuning may yield better performance
 
 <img width="205" alt="Screenshot 2024-10-23 at 1 27 31 PM" src="https://github.com/user-attachments/assets/ac7b0cfd-c45d-41cb-9237-59a038c93cbf">
 
-**But** it is significantly more efficent because there is no need for full model tuning and no parameter updates.
+**But** it is significantly more efficent (1.3 - 15 times more) because there is no need for full model tuning and no parameter updates.
 
 ## Pseudocode
 <img width="559" alt="Screenshot 2024-10-23 at 2 28 04 PM" src="https://github.com/user-attachments/assets/718b09ad-f908-45bf-ae7e-882068c6f2cb">
